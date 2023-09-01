@@ -56,32 +56,69 @@
     right: -4.5%;
     letter-spacing: 1.6px;
     color: #AD93CF;
-
 }
 
 
 .diane {
     top: -66px;
     left: calc(50% - 48px - 832px);
-    z-index: 2;
+    z-index: -1;
+    position: relative !important;
+
+    h2 {
+        position: absolute !important;
+        z-index: 9;
+
+    }
 }
 
 .felix {
     top: 32px;
     left: calc(50% - 16px - 416px);
-    z-index: 2;
+    z-index: -1;
 }
 
 .karina {
     top: 32px;
     right: calc(50% - 16px - 416px);
-    z-index: 2;
+    z-index: -1;
 }
 
 .vito {
     top: -66px;
     right: calc(50% - 48px - 832px);
-    z-index: 2;
+    z-index: -1;
+}
+
+
+.h2-transform {
+    transform: translate(40%, 140%) !important;
+    z-index: 9;
+}
+
+.h2-transform-2 {
+    transform: translate(-40%, -90%) !important;
+    z-index: 9;
+}
+
+.h2-transform-3 {
+    transform: translate(95%, -90%) !important;
+    z-index: 9;
+}
+
+.bannerImg {
+    position: relative;
+
+    .bannerAd {
+        position: absolute;
+        top: 30%;
+        right: 3%;
+    }
+}
+
+#style-3::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
 }
 
 /* .banner {
@@ -108,7 +145,7 @@
 .banner {
     height: 1080px;
     background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
-    z-index: -1;
+    z-index: -2;
 }
 
 
@@ -123,7 +160,7 @@
     filter: blur(9px);
     height: 1089px;
     width: 50%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .project {
@@ -177,6 +214,31 @@
 
 .share {
     background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.card-1:hover {
+    background-image: url('../images/diane_vertical.png');
+}
+
+.card-2:hover {
+    background-image: url('../images/felix_vertical.png');
+}
+
+.card-3:hover {
+    background-image: url('../images/karina_verticalgle.png');
+}
+
+.card-4:hover {
+    background-image: url('../images/vito_vertical.png');
 }
 
 
