@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #7000ff 0%, #11002d 100%);
+    color: white !important;
+}
+
+a {
+    display: block;
+    text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}

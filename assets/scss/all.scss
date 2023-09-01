@@ -1,0 +1,18 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+
+@import './utils/mixin';
+@import './utils/variables';
+@import "./utils/utilities";
+
+@import './base/base';
+@import './base/reset';
+
+@import "./layout/container";
+@import "./layout/container2";
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index';
+
+@import "../../node_modules/bootstrap";
