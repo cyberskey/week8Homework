@@ -1,6 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/shrikhand');
 @import url('https://fonts.cdnfonts.com/css/saira-extracondensed');
 
+.maxW-336 {
+    max-width: 336px !important;
+}
 
 .gap-40 {
     gap: 40px
@@ -131,4 +134,29 @@
 
 .bg-contact {
     background: #1F0F39;
+}
+
+.fs-64-96 {
+    font-size: 96px;
+
+    @include pc {
+        font-size: 64px;
+    }
+}
+
+
+.fs-24-48 {
+    font-size: 48px;
+
+    @include pc {
+        font-size: 24px;
+    }
+}
+
+.fs-24-32 {
+    font-size: 32px;
+
+    @include pc {
+        font-size: 24px;
+    }
 }

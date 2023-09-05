@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <%- include('./layout/headLink'); -%>
-
+    
     <title>AI 虛擬陪伴</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+
     <div class="cover h-308">    
         <div class="container position-relative">
-          <div class="row pt-56 pb-56">
+          <div class="row pt-56 pb-56 d-flex justify-content-center align-item-center">
             <div class="col-12 col-md-6 col-xl-2 d-flex flex-column justify-content-end">
-              <span class="position-absolute leftWords">最新消息！新版本 v15.4 釋出，搶先體驗！</span>
+              <span class="d-none d-xxxl-flex position-absolute leftWords">最新消息！新版本 v15.4 釋出，搶先體驗！</span>
             </div>
-            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center flex-column flex-xl-row order-2 order-xl-1 mt-xxxl-0 mt-64">
               <div class="circle">
                 <div class="logo"></div>
                 <div class="text text1">
                   <p>ALPHABOX+ALPHABOX+</p>
                 </div>
               </div>
-
             </div>
-            <div class="col-12 col-md-6 col-xl-2 d-flex flex-column">
-              <span class="mb-auto rightWords-1">ALPHABOX+ STUDIO</span>
-              <span class="position-absolute bottom-0 rightWords-2">Copyright © 2023 Hexschool.</span>
+
+            <div class="col-12 col-md-12 col-xl-2 d-flex flex-column pt-4 order-1 order-xl-2">
+              
+              <span class="position-absolute mb-auto rightWords-1 border-top">ALPHABOX+ STUDIO</span>
+              
+              <span class="d-none d-xxxl-flex position-absolute bottom-0 rightWords-2">Copyright © 2023 Hexschool.</span>
             </div>
         </div>      
     </div>
@@ -36,35 +40,42 @@
     
       <div class="title mb-24 h-563">
         <div class="container">
-          <div class="row d-flex flex-column justify-content-center align-items-center ">
-            <div class="col-12 col-md-8 d-flex flex-column letter-spacing-16">
+          <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-xl-8 d-flex flex-column letter-spacing-16">
               <h2 class="ft-Shrikhand fs-32 letter-spacing-80 mb-0 pb-0">ALPHABOX+</h2>
-              <span class="fw-bold letter-spacing-16 d-flex justify-content-evenly ">擁抱未來科技，專屬您的3D立體投影陪伴機器人</span>
+              <span class="fw-bold letter-spacing-16 d-flex justify-content-evenly">擁抱未來科技，專屬您的3D立體投影陪伴機器人</span>
             </div>  
           </div>
         </div>
+        
       <div class="AI-Idol">
         <div class="container position-relative">
           <div class="row">
             <div class="idol col-12 col-md-6 col-xl-2">
-              <h2 class="h2-transform-2 ft-Shrikhand">Diane</h2>
-              <img src="../assets/images/diane.png" alt="diane.png" class="diane position-absolute w-416" style="height: 676px;">
+              <div class="diane-content diane position-absolute w-416">
+                <img src="../assets/images/diane.png" alt="diane.png"  style="height: 676px;">
+              </div>
             </div>
             <div class="idol col-12 col-md-6 col-xl-4">
-              <h2 class="h2-transform ft-Shrikhand">Felix</h2>
-              <img src="../assets/images/felix.png" alt="felix.png" style="height: 580px;" class="felix position-absolute w-416">
+              <div class="felix-content felix position-absolute w-416">
+                <img src="../assets/images/felix.png" alt="felix.png" style="height: 580px;" class="">
+              </div>
             </div>
             <div class="idol col-12 col-md-6 col-xl-4">
-              <h2 class="h2-transform ft-Shrikhand">Karina</h2>
-              <img src="../assets/images/karina.png" alt="karina.png" style="height: 580px;" class="karina position-absolute w-416">
+              <div class="karina-content karina position-absolute w-416">
+                <img src="../assets/images/karina.png" alt="karina.png" style="height: 580px;">
+              </div>
             </div>
             <div class="idol col-12 col-md-6 col-xl-2">
-              <h2 class="h2-transform-3 ft-Shrikhand">Vito</h2>
-              <img src="../assets/images/vito.png" alt="vito.png" class="vito position-absolute w-416" style="height: 676px;">
+              <div class="Vito-content vito position-absolute w-416">
+                <img src="../assets/images/vito.png" alt="vito.png" class="" style="height: 676px;">
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+
     </div>
 
     <div class="banner position-relative">
@@ -72,8 +83,8 @@
 
       <div class="container2 w-100">
         <div class="title-2 w-100 border-bottom border-white">
-          <h2 class="fs-48 fw-bold d-flex text-white letter-spacing-48 mt-8 mb-12 fw-bold">什麼是</h2>
-          <h2 class="fs-48 fw-bold d-flex text-white letter-spacing-48 fw-bold ">ALPHABOX+</h2>
+          <h2 class="fs-24-48 fw-bold d-flex text-white letter-spacing-48 mt-8 mb-12 fw-bold">什麼是</h2>
+          <h2 class="fs-24-48 fw-bold d-flex text-white letter-spacing-48 fw-bold ">ALPHABOX+</h2>
         </div>
       </div>
 
@@ -96,7 +107,7 @@
     <div class="news" style="height: 1080px;">
       <div class="container">
         <h2 class="fs-48 fw-bold mb-40">最新消息</h2>
-        <div class="newsItem py-40 border-top border-bottom">
+        <div class="py-40 border-top border-bottom">
             <div class="mb-8"><span class="material-symbols-outlined fs-16 me-16">
               emergency</span><span>2023.06.30</span>
             </div>
@@ -111,22 +122,22 @@
             </div>  
         </div>
 
-        <div class="newsItem border-top border-bottom">
+        <div class="newsItems border-top border-bottom">
           <div class="row w-100">
-            <div class="col-6 border-end py-40 ps-16">
+            <div class="newsItem col-12 col-lg-6 py-40 ps-16">
               <div class="mb-8"><span class="material-symbols-outlined fs-16 me-16">
                 emergency</span><span>2023.06.30</span>
               </div>
-              <p class="mb-12">產品升級公告</p>
-              <p class="w-70 mb-12">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
+              <p class="mb-12">限時優惠活動</p>
+              <p class="w-70 mb-12">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
               <img src="../assets/images/line_end_arrow_notch.svg" alt="arrow_notch" style="width: 90px;">
             </div>
-            <div class="col-6 py-40 ps-16">
+            <div class="col-12 col-lg-6 py-40 ps-16">
               <div class="mb-8"><span class="material-symbols-outlined fs-16 me-16">
-                emergency</span><span>2023.06.30</span>
+                emergency</span><span>2023.04.18</span>
               </div>
-              <p class="mb-12">產品升級公告</p>
-              <p class="w-70 mb-12">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
+              <p class="mb-12">新功能上線</p>
+              <p class="w-70 mb-12">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
               <img src="../assets/images/line_end_arrow_notch.svg" alt="arrow_notch" style="width: 90px;">
             </div>
           </div>   
@@ -141,20 +152,24 @@
               <p>ALPHABOX+ALPHABOX+</p>
             </div>
           </div>
-          <span class="text-end mt-auto">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</span>
+          <span class="text-end mt-auto d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</span>
         </div>
       </div>
     </div>
 
     <div class="share">
       <div class="container d-flex flex-column pt-160 pb-40 position-relative">
-        <div class="d-flex align-items-center mb-16"><h2 class="fs-48 fw-bold letter-spacing-48 me-214 mb-0">使用分享</h2><span>展示其他使用者對於產品的真實體驗與評價</span></div>
+        <div class="row d-flex align-items-center mb-16">
+          <h2 class="col-12 col-lg-6 fs-48 fw-bold letter-spacing-48 mb-24 mb-lg-0">使用分享</h2>
+          <span class="col-12 col-lg-6">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</span>
+        </div>
         <span class="mb-40">01 — 04</span>
+        
         <span class="material-symbols-outlined fs-54 mb-24">
           emergency</span>
-        <div  id="style-3" class="feedback d-flex overflow-x-scroll mb-136">
-          <ul class="d-flex gap-24 ps-0">
-            <li class="card-rect card-rect-color p-40 d-flex flex-column fw-bold">
+        <div  id="style-3" class="feedback d-flex mb-136">
+          <ul class="row d-flex flex-wrap flex-xl-nowrap  gap-24 ps-0">
+            <li class="col-12 col-lg-6 col-xl-3 card-rect card-rect-color p-40 d-flex flex-column fw-bold maxW-336">
                 <h5 class="fw-bold mb-32">Zona&bull;Taipei</h5>
                 <p class="d-flex text-justify">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
                 <div class="d-flex gap-16 mt-auto">
@@ -162,7 +177,7 @@
                   <span class="material-symbols-outlined fs-16">radio_button_unchecked</span><span>ALPHABOX+ Dianne</span>
                 </div>
             </li>
-            <li class="card-rect bg-white p-40 d-flex flex-column text-dark fw-bold">
+            <li class="col-12 col-lg-6 col-xl-3 card-rect bg-white p-40 d-flex flex-column text-dark fw-bold maxW-336">
               <h5 class="fw-bold mb-32">Lin&bull;Chiayi</h5>
               <p class="d-flex text-justify">非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
               <div class="d-flex gap-16 mt-auto">
@@ -170,7 +185,7 @@
                 <span class="material-symbols-outlined fs-16">radio_button_unchecked</span><span>ALPHABOX+ Felix</span>
               </div>
             </li>
-            <li class="card-rect card-rect-color p-40 d-flex flex-column fw-bold">
+            <li class="col-12 col-lg-6 col-xl-3 card-rect card-rect-color p-40 d-flex flex-column fw-bold maxW-336">
               <h5 class="fw-bold mb-32">云&bull;Taipei</h5>
               <p class="d-flex text-justify">我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
               <div class="d-flex gap-16 mt-auto">
@@ -178,7 +193,7 @@
                 <span class="material-symbols-outlined fs-16">radio_button_unchecked</span><span>ALPHABOX+ Dianne</span>
               </div>
             </li>
-            <li class="card-rect bg-white p-40 d-flex flex-column fw-bold text-dark">
+            <li class="col-12 col-lg-6 col-xl-3 card-rect bg-white p-40 d-flex flex-column fw-bold text-dark maxW-336">
               <h5 class="fw-bold mb-32">Zichi&bull;Kaohsiung</h5>
               <p class="d-flex text-justify">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
               <div class="d-flex gap-16 mt-auto">
@@ -195,20 +210,20 @@
     <div class="contact bg-contact">
         <div class="container py-144">
           <div class="row">
-              <div class="col-5">
+              <div class="col-12 col-lg-5">
               <h2 class="fs-48 fw-bold mb-20">聯絡我們</h2>
                  <div class="d-flex align-items-center mb-54"><span class="material-symbols-outlined fs-16 me-8">radio_button_unchecked</span><div style="border: 6px solid white; width: 124px; height: 0" class="rounded-pill ms-m"></div></div>
 
               <p class="mb-4">讓科技成為您的最佳夥伴</p>
               <p>立即體驗神奇功能並享限時優惠</p>
               </div>
-              <div class="col-7">
+              <div class="col-12 col-lg-7">
                 <span class="material-symbols-outlined fs-54 mb-24">
                   emergency</span>
                   <form action="" class="d-flex flex-column">
                     <input type="text" name="email" id="email" placeholder="EMAIL" class="py-8 px-16 fs-20 mb-16 fw-bold">
                     <textarea name="comments" id="comments" cols="30" rows="4" class="py-8 px-16 fs-20 mb-20 fw-bold" placeholder="COMMENTS"></textarea>
-                    <button class="w-50 px-16 py-8 d-flex justify-content-center align-items-center bg-primary-2 text-white ms-auto"><span class="material-symbols-outlined me-4">
+                    <button class="w-100 w-lg-50 px-16 py-8 d-flex justify-content-center align-items-center bg-primary-2 text-white ms-auto"><span class="material-symbols-outlined me-4">
                       point_scan</span><span>送出</span></button>
                   </form>
               </div>
@@ -217,27 +232,27 @@
         
     </div>
 
-    <div class="group h-876 bg-dark">
-      <ul class="row h-100 m-0 p-0">
-        <li class="card-1 col-3 border-end text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">1</span><span class="ft-Shrikhand fs-32">Diane</span>
+    <div class="group h-876 bg-dark vh-100">
+      <ul class="row h-100 m-0 p-0 ">
+        <li class="card-1 col-12 col-lg-6 col-3 border-end text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">1</span><span class="ft-Shrikhand fs-32">Diane</span>
         <div class="mt-auto">
           <span>知識型</span>
           <div><span class="me-40">學術領導/知識分享/智能問答</span><span><img src="../assets/images/line_end_arrow_notch.svg" alt="arrow_notch" style="width: 196px;"></span></div>
         </div>
         </li>
-        <li class="card-2 col-3 border-end text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">2</span><span class="ft-Shrikhand fs-32">Felix</span>
+        <li class="card-2 col-12 col-lg-6 col-3 border-end text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">2</span><span class="ft-Shrikhand fs-32">Felix</span>
           <div class="mt-auto">
             <span>娛樂型</span>
             <div><span class="me-40">音樂播放/語音互動/遊戲陪伴</span><span><img src="../assets/images/line_end_arrow_notch.svg" alt="arrow_notch" style="width: 196px;"></span></div>
           </div>
         </li>
-        <li class="card-3 col-3 border-end text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">3</span><span class="ft-Shrikhand fs-32">Karina</span>
+        <li class="card-3 col-12 col-lg-6 col-3 border-end text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">3</span><span class="ft-Shrikhand fs-32">Karina</span>
           <div class="mt-auto">
             <span>生活型</span>
             <div><span class="me-40">健康提醒/日程安排/智能家居</span><span><img src="../assets/images/line_end_arrow_notch.svg" alt="arrow_notch" style="width: 196px;"></span></div>
           </div>
         </li>
-        <li class="card-4 col-3 text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">4</span><span class="ft-Shrikhand fs-32">Karina</span>
+        <li class="card-4 col-12 col-lg-6 col-3 text-white d-flex flex-column justify-content-center align-items-center ft-SairaExtraCondensed pb-56"><span class="fs-400 mb-20">4</span><span class="ft-Shrikhand fs-32">Karina</span>
           <div class="mt-auto">
             <span>情感型</span>
             <div><span class="me-40">情感識別/心情分析/心靈支持</span><span><img src="../assets/images/line_end_arrow_notch.svg" alt="arrow_notch" style="width: 196px;"></span></div>
@@ -263,12 +278,11 @@
             (char, i) => `<span style="transform:rotate(${i * 20}deg)">${char}</span>`
           )
           .join("");
-
     </script>
 
     <%- include('./layout/footer'); -%>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script> -->
     <script type="module" src="../main.js"></script>
   </body>
 </html>

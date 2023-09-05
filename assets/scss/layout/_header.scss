@@ -1,0 +1,23 @@
+.custom-collapse {
+
+    @include pc {
+        position: absolute !important;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: none;
+        background: $primary-3;
+    }
+}
+
+.navbar-nav {
+    @include pad {
+        flex-direction: column;
+    }
+}
+
+.custom-toggler[aria-expanded="true"]+.custom-collapse {
+    display: block;
+
+}

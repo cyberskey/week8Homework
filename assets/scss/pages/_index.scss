@@ -47,8 +47,24 @@
     letter-spacing: 1.6px;
 }
 
+.title {
+    @include pc-xxxl {
+        height: 1280px !important;
+    }
+}
+
 .rightWords-1 {
     letter-spacing: 1.6px;
+    min-width: 416px;
+
+
+    @include pc-xxxl {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 90vw !important;
+    }
+
 }
 
 .rightWords-2 {
@@ -58,17 +74,23 @@
     color: #AD93CF;
 }
 
-
 .diane {
     top: -66px;
     left: calc(50% - 48px - 832px);
     z-index: -1;
     position: relative !important;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
 
     h2 {
         position: absolute !important;
         z-index: 9;
 
+    }
+
+    @include pc-xxxl {
+        top: 660px;
+        left: calc(50% - 16px - 416px);
+        height: 580px;
     }
 }
 
@@ -76,35 +98,89 @@
     top: 32px;
     left: calc(50% - 16px - 416px);
     z-index: -1;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
 }
 
 .karina {
     top: 32px;
     right: calc(50% - 16px - 416px);
     z-index: -1;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
 }
 
 .vito {
     top: -66px;
     right: calc(50% - 48px - 832px);
     z-index: -1;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+
+    @include pc-xxxl {
+        top: 660px;
+        right: calc(50% - 16px - 416px);
+        height: 580px;
+    }
 }
 
-
-.h2-transform {
-    transform: translate(40%, 140%) !important;
-    z-index: 9;
+.diane-content::before {
+    content: "Diane";
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 32px;
+    font-family: Shrikhand;
 }
 
-.h2-transform-2 {
-    transform: translate(-40%, -90%) !important;
-    z-index: 9;
+.felix-content::before {
+    content: "felix";
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 32px;
+    font-family: Shrikhand;
 }
 
-.h2-transform-3 {
-    transform: translate(95%, -90%) !important;
-    z-index: 9;
+.karina-content::before {
+    content: "felix";
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 32px;
+    font-family: Shrikhand;
 }
+
+.karina-content::before {
+    content: "karina";
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 32px;
+    font-family: Shrikhand;
+}
+
+.Vito-content::before {
+    content: "karina";
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 32px;
+    font-family: Shrikhand;
+}
+
 
 .bannerImg {
     position: relative;
@@ -157,12 +233,52 @@
     background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
 }
 
+.newsItem {
+    border-right: 1px solid #ffffff;
+
+    @include pc {
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+
+$breakpoints: (
+    1800PX: 1000px,
+    1600px: 900px,
+    1400px: 800px,
+    1200px: 700px,
+    992px: 600px,
+    768px: 500px,
+    /* 414px: 500px */
+);
+
 .banner {
     height: 1080px;
     background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%);
     z-index: -2;
+
+    @each $bp,
+    $height in $breakpoints {
+        @media(max-width: #{$bp}) {
+            height: #{$height};
+        }
+    }
+
+    /*  @include pc-xxxl {
+        margin-top: 850px;
+    } */
 }
 
+
+$breakpoints-2: (
+    1600PX: 1000px,
+    1400px: 900px,
+    1200px: 800px,
+    992px: 700px,
+    768px: 600px,
+    414px: 500px
+);
 
 .banner::before {
     content: "";
@@ -173,9 +289,17 @@
     top: -13%;
     background-repeat: no-repeat;
     filter: blur(9px);
-    height: 1089px;
+    height: 1090px;
     width: 50%;
     z-index: -2;
+
+    @each $bp,
+    $height in $breakpoints-2 {
+        @media(max-width: #{$bp}) {
+            height: #{$height};
+        }
+    }
+
 }
 
 .project {
@@ -229,6 +353,21 @@
 
 .share {
     background: radial-gradient(50% 50% at 50% 50%, #000 0%, #28085C 100%);
+}
+
+.feedback {
+
+    @media(min-width:1200px) {
+        overflow-x: scroll;
+    }
+
+    ul {
+        @include pc-xl {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
 }
 
 .card-1,
